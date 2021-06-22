@@ -1,0 +1,26 @@
+{
+  "name": "cdubs-tech-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwinters87/cdubs-tech-blog.git"
+  },
+  "author": "Chris Winters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cwinters87/cdubs-tech-blog/issues"
+  },
+  "homepage": "https://github.com/cwinters87/cdubs-tech-blog#readme",
+  "dependencies": {
+    "connect-session-sequelize": "^7.1.1",
+    "dotenv": "^10.0.0",
+    "express-handlebars": "^5.3.2",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2"
+  }
+}
