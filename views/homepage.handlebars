@@ -1,11 +1,10 @@
-  
-<ul>
+ <ul class='post-list'>
   {{#each posts as |post|}}
     <li>
-      <a href="/post/{{post.id}}">
-        <div>
+      <a class='post' href='/post/{{post.id}}'>
+        <div class='blog-title'>
           <p>{{post.title}}</p>
-          <p>{{format_date post.createdAt}}</p>
+          <p>{{format_date post.created_at}}</p>
         </div>
       </a>
     </li>
