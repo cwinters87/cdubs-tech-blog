@@ -2,9 +2,14 @@
   {{#each posts as |post|}}
     <li>
       <a class='post' href='/post/{{post.id}}'>
-        <div class='blog-title'>
-          <p>{{post.title}}</p>
-          <p>{{format_date post.created_at}}</p>
+        <div class='blog-div'>
+          <div class="blog-title">
+            <p>{{post.title}}</p>
+            <p><span>Posted by {{post.user.username}} on {{format_date post.created_at}}</span></p>
+          </div>
+          <div class="blog-post">
+            <p>{{post.blog}}</p>
+          </div>          
         </div>
       </a>
     </li>

@@ -3,15 +3,20 @@
     <h2>Your Posts</h2>
     <ul class='post-list'>
       {{#each posts as |post|}}
-      <li>
-        <a class='post' href='/dashboard/edit/{{post.id}}'>
-          <div class='blog-title'>
+    <li>
+      <a class='post' href='/post/{{post.id}}'>
+        <div class='blog-div'>
+          <div class="blog-title">
             <p>{{post.title}}</p>
-            <p>{{format_date post.created_at}}</p>
+            <p><span>Posted on {{format_date post.created_at}}  --- <a class="edit-btn" href="/dashboard/edit/{{post.id}}">Edit Post</a></span></p>
           </div>
-        </a>
-      </li>
-      {{/each}}
+          <div class="blog-post">
+            <p>{{post.blog}}</p>
+          </div>          
+        </div>
+      </a>
+    </li>
+  {{/each}}
     </ul>
   </section>
 {{/if}}
@@ -21,10 +26,11 @@
 
   <form class='new-post-form'>
     <div>
-      <label for='post-title'>Title</label>
+      <label for='post-title'>Title:</label>
       <input type='text' id='post-title' name='post-title' />
     </div>
     <div>
+      <p>Blog:</p>
       <textarea id='post-blog' name='post-blog'></textarea>
     </div>
     <button type='submit' class='btn'>Create</button>

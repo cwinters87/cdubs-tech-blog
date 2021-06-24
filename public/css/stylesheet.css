@@ -1,0 +1,142 @@
+body {
+    background-color: lightgray;
+}
+
+header {
+    background-color: #331900;
+    color: lightgray;
+}
+
+nav {
+    padding: 25px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+nav a {
+    text-decoration: none;
+    color: lightgray;
+    margin: 10px;
+}
+
+nav button {
+    background: none;
+    color: lightgray;
+    border: none;  
+    font-size: 30px;
+    font-weight: normal;
+}
+
+header h1 {
+    
+    display:inline-block;
+    color:#331900;
+    border:1px solid #CCC;
+    background:lightgray;
+    box-shadow: 5px 5px grey;
+    vertical-align:middle;
+    max-width: 200px;
+    padding: 5px 15px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+main ul {
+    list-style: none;
+}
+
+.post {
+    text-decoration: none;
+}
+
+.blog-div {
+    border: 5px solid #331900;    
+    margin: 0px 35px 20px 0px;    
+    box-shadow: 10px 10px 5px darkgray;
+}
+
+.blog-title {
+    display: flex;
+    justify-content: space-between;
+    background-color: #331900;
+    color: lightgray;
+}
+
+.blog-title p {
+    font-size: 20px;
+    padding-left: 15px;
+    font-weight: bold;
+    color: lightgray;
+    
+}
+
+.blog-title p span {
+    font-size: 15px;
+    padding-right: 15px;
+    color: lightgray;
+}
+
+.edit-btn {
+    text-decoration: none;
+    color: lightgray;
+    margin-right: 10px;
+}
+
+.blog-post {
+    font-size: 18px;
+    padding-left: 15px;
+    color: #331900;
+}
+
+section h2 {
+    color: #331900;
+    margin-left: 45px
+}
+
+.new-post-form {
+    margin-left: 45px;
+    margin-right: 45px;
+    color: #331900;
+    font-weight: bold;
+    font-size: 20px;    
+    display: flex;
+    flex-direction: column;
+}
+
+.new-post-form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-post-form div label {
+    margin-bottom: 15px;
+}
+
+.new-post-form button {
+    max-width: 150px;
+    height: 25px;
+    margin: 10px 0px;
+    color:lightgray;
+    border:1px solid #CCC;
+    background:#331900;
+    box-shadow: 10px 10px 5px darkgray;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+#post-title {
+    width: 300px;
+    height: 40px;
+    border: 5px solid #331900;
+    box-shadow: 10px 10px 5px darkgray;
+}
+
+#post-blog {
+    width: 100%;
+    height: 150px;
+    border: 5px solid #331900;
+    box-shadow: 10px 10px 5px darkgray;    
+}

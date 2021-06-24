@@ -76,7 +76,7 @@ router.post('/login', (req, res) => {
   }).then((dbUserData) => {
     if (!dbUserData) {
       res.status(400).json({ message: 'That username was not found!' })
-      console.log('Incorrect password!')
+      console.log(err)
       return
     }
 
