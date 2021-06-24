@@ -1,37 +1,56 @@
-<div class='blog-title'>
-  <p>{{post.title}}</p>
-  <p>Posted by {{post.user.username}} on {{format_date post.created_at}}</p>
-</div>
-<div class='blog'>
-  <p>{{post.blog}}</p>
+
+
+<section>
+    <h2>Blog:</h2>
+    <ul class='post-list'>
+    <li>
+      <a class='post' href='/post/{{post.id}}'>
+        <div class='blog-div'>
+          <div class="blog-title">
+            <p>{{post.title}}</p>
+            <p><span>Posted by {{post.user.username}} on {{format_date post.created_at}}</span></p>
+          </div>
+          <div class="blog-post">
+            <p>{{post.blog}}</p>
+          </div>          
+        </div>
+      </a>
+    </li>
+    </ul>
+  </section>
+
+<div class='comments'>
+  <h2>Comments:</h2>
+  {{#each post.comments}}
+    <section class='comment'>
+      <div class='comment-date'>
+       {{user.username}}
+        on
+        {{format_date created_at}}
+      </div>
+      
+      <div class='comment-text'>
+        {{comment_text}}
+      </div>
+      
+    </section>
+  {{/each}}
 </div>
 
 {{#if loggedIn}}
+<section><h2>Add Comment:</h2>
   <form class='comment-form'>
     <div>
       <textarea name='comment-body'></textarea>
     </div>
 
     <div>
-      <button type='submit'>add comment</button>
+      <button type='submit'>Submit Comment</button>
     </div>
   </form>
+  </section>
 {{/if}}
 
-<div class='comments'>
-  {{#each post.comments}}
-    <section class='comment'>
-      <div class='comment-text'>
-        {{comment_text}}
-      </div>
-      <div class='comment-date'>
-        {{user.username}}
-        on
-        {{format_date created_at}}
-      </div>
-    </section>
-  {{/each}}
-</div>
 
 {{#if loggedIn}}
   <script src='/js/comment.js'></script>
