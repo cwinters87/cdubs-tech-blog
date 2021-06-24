@@ -298,3 +298,81 @@ article h2 {
     border-color: #331900;
     box-shadow: 5px 5px 5px darkgray;
 }
+
+#signup-div {
+    margin: 25px 0px 0px 50px;
+    
+}
+
+#signup-div a {
+    font-size: 25px;
+    font-weight: bold;
+    color: #331900;
+}
+
+.signup-form {
+    margin: 25px 45px 0px 45px;
+    border: 5px solid #331900;      
+    box-shadow: 10px 10px 5px darkgray;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form h2 {
+    color: lightgray;
+    background-color: #331900;
+    margin: 0px;
+    padding: 5px 0px 10px 10px;
+}
+
+.signup-form div {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 50px 0px 50px;
+}
+
+.signup-form div button {
+    width: 150px;
+    margin-bottom: 10px;
+    max-width: 150px;
+    height: 25px;
+    color:lightgray;
+    border:1px solid #CCC;
+    background:#331900;
+    box-shadow: 10px 10px 5px darkgray;
+    border-radius: 10px;
+}
+
+#username-signup {
+    width: 200px;
+}
+
+#password-signup {
+    width: 200px;
+}
+
+.signup-form div label {
+    font-size: 20px;
+    margin: 8px 0px;
+    font-weight: bold;
+    color: #331900;
+}
+
+.signup-form div input {
+    font-size: 18px;
+    margin: 8px 0px;
+    border-radius: 5px;
+    border-color: #331900;
+    box-shadow: 5px 5px 5px darkgray;
+}
+
+#login-div {
+    margin: 25px 0px 0px 50px;
+    
+}
+
+#login-div a {
+    font-size: 25px;
+    font-weight: bold;
+    color: #331900;
+}
