@@ -9,5 +9,5 @@
       return `${word}s`
     }
     return word
-  },
+  }
 }
