@@ -19,9 +19,9 @@ Site where you can post and comment about anything Tech!<br/>
 ## Demo
 [Website](https://cdubs-tech-blog.herokuapp.com/)
 [Video Demo](https://drive.google.com/file/d/10rv3CWb98MK8pnk7UasULG1bWmKXxE-I/view?usp=sharing)
-![blog](./imgages/blog.png)
-![blog2](./imgages/blog2.png)
-![blog3](./imgages/blog3.png)
+![blog](./images/blog.png)
+![blog2](./images/blog2.png)
+![blog3](./images/blog3.png)
 ## Contributing
 👪 Chris Winters
 ## Questions
